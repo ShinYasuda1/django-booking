@@ -1,0 +1,28 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+
+<div class="container text-center my-5">
+    <div class="mb-5">
+        <h1 class="text-primary">トレーニングジム一覧</h1>
+    </div>
+    <div class="row justify-content-center">
+        {% for store in store_data %}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card store-card">
+                    <div class="card-body text-center">
+                        <h5 class="font-weight-bold">{{ store.name }}店</h5>
+                        <p>{{ store.address }}</p>
+                    </div>
+                    <a class="stretched-link" href="{% url 'staff' store.pk %}"></a>
+                </div>
+            </div>
+        {% empty %}
+            <div class="col">
+                <p class="text-danger">まだ店舗がありません</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
