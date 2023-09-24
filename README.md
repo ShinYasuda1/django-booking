@@ -9,10 +9,10 @@
 
 
 パーソナルトレーニングの予約アプリです。
-サインアップをしてトレーニングの予約ができます。
+サインアップをしてトレーニングの予約ができます。<br>
 トレーナーは店舗を登録し、自分の予約を確認することができます。
 
-This is a personal training reservation app. Users can sign up and make reservations for training sessions. 
+This is a personal training reservation app. Users can sign up and make reservations for training sessions. <br>
 Trainers can register their stores and manage their own reservations.
 
 
